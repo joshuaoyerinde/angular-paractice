@@ -1,0 +1,21 @@
+
+<div class="container" id="con">
+  <div class="row mx-auto">
+    <div class="col-md-6">
+        <div class="card shadow">
+            <div class="card-header bg-light text-center text-dark" id="card-header">
+              <span class="card-content">Add Student</span>
+            </div>
+              <form class="card-body form-group" [formGroup]="studentForm"  (submit)="addStudent()">
+                  <input formControlName="firstname" placeholder="First name" class="form-control"><br>
+                  <input type="" formControlName="email" placeholder="Email" class="form-control">
+                  <input type="" formControlName="phone" placeholder="phone number" class="form-control mt-4">
+                  <input type="" formControlName="latsname" placeholder="Last name" class="form-control mt-4">
+                  <div class="card-footer">
+                    <button  type="submit" class="btn btn-warning float-right col-4" id="btn"><i class="fa fa-plus"></i></button>
+                  </div>
+                </form>
+          </div>
+      </div>
+  </div>
+ </div>

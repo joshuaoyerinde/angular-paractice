@@ -1,0 +1,22 @@
+.card-content{
+  color: orange;
+  font-family:Forte;
+  letter-spacing: 1.5px;
+  font-size: 22px;
+}
+#con{
+  margin-top: 5% !important;
+}
+.card-footer{
+  overflow: hidden;
+}
+#btn{
+  /* background-color: azure; */
+  outline:none;
+}
+#btn:hover{
+  border-bottom: 4px solid red;
+  transition: ease 1s;
+  transform: scale(1);
+
+}

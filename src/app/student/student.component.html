@@ -1,0 +1,23 @@
+<table class="table table-hover mt-4">
+  <thead>
+    <tr>
+      <th>FULL name</th>
+      <th>LAST NAME</th>
+      <th>PHONE NUMBER</th>
+      <th>email</th>
+      <th>VIEW</th>
+      <th>ACTION</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let student of students">
+    <td>{{student.name | uppercase}}</td>
+    <td>{{student.lastname| uppercase}}</td>
+    <td>{{student.phone}}</td>
+    <td>{{student.email| uppercase}}</td>
+    <td><button (click)="viewstudent(student.id)" class="btn btn-success"><i class="fa fa-inbox"></i></button></td>
+    <td><button class="btn btn-warning" (click)="removeStu(student)"><i class="fa fa-remove"></i></button></td>
+    </tr>
+  </tbody>
+
+</table>

@@ -1,0 +1,7 @@
+{
+  "/http-request/*":{
+    "target":"http://localhost:80",
+    "secure":false,
+    "changeOrigin":true
+  }
+}
